@@ -19,5 +19,7 @@ namespace LibraryAPI.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
+        public string Genre { get; set; }
+
     }
 }
