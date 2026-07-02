@@ -56,5 +56,12 @@ namespace LibraryAPI.Controllers
             return NoContent();
         }
 
+        [HttpGet("search/{title}")]
+        public IActionResult SearchBooksByTitle(string title)
+        {
+            var books = _bookService.GetAllBooks().Where(b => b.Title.Contains(title, StringComparison.OrdinalIgnoreCase)).ToList();
+            return Ok(books);
+        }
+
     }
 }
