@@ -24,6 +24,6 @@ namespace LibraryAPI.Models
 
         public string Genre { get; set; }
 
-
+        public bool Borrowed { get; set; } = false;
     }
 }
