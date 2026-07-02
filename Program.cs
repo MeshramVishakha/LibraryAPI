@@ -1,3 +1,5 @@
+// LibraryAPI - Built with ASP.NET Core, EF Core, JWT Auth
+// Author: Vishakha Meshram
 using LibraryAPI.DataBase;
 using LibraryAPI.Repository;
 using LibraryAPI.Services;
